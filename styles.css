@@ -68,3 +68,28 @@ button:hover {
 .delete-button:hover {
   background-color: #b91c1c;
 }
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.task-action {
+  padding: 10px 12px;
+}
+
+.task-edit-input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.edit-cancel-button {
+  background-color: #6b7280;
+}
+
+.edit-cancel-button:hover {
+  background-color: #4b5563;
+}
