@@ -129,6 +129,8 @@ function renderTasks() {
     deleteButton.addEventListener("click", () => {
       if (editingIndex === index) {
         editingIndex = null;
+      } else if (editingIndex !== null && index < editingIndex) {
+        editingIndex -= 1;
       }
       tasks.splice(index, 1);
       saveTasksToStorage();
